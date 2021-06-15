@@ -57,7 +57,7 @@ WORKDIR /opt/www
 # RUN composer install --no-dev --no-scripts
 
 COPY . /opt/www
-COPY ./config/config-local.php.dist /opt/www/config/config-loca.php
+COPY ./config/config-local.php.dist /opt/www/config/config-local.php
 COPY ./.env.example ./.env
 #RUN composer install --no-dev -o
 #RUN composer install \

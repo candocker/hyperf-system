@@ -13,6 +13,7 @@ return [
     'scan' => [
         'paths' => [
             BASE_PATH . '/app',
+            BASE_PATH . '/vendor/swoolecan/foundation/src',
             BASE_PATH . '/vendor/swoolecan/baseapp/src',
         ],
         'ignore_annotations' => [
