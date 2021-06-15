@@ -30,7 +30,7 @@ return [
             'name' => 'jsonrpc-http',
             'type' => Server::SERVER_HTTP,
             'host' => '0.0.0.0',
-            'port' => 9504,
+            'port' => intval(env('JSON_SERVER_PORT', 9601)),
             'sock_type' => SWOOLE_SOCK_TCP,
             'callbacks' => [
                 SwooleEvent::ON_REQUEST => [Hyperf\JsonRpc\HttpServer::class, 'onRequest'],

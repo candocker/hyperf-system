@@ -11,5 +11,5 @@ declare(strict_types=1);
  */
 
 return [
-    \Swoolecan\Baseapp\Listeners\ValidatorMobileListener::class
+    \Framework\Baseapp\Listeners\ValidatorMobileListener::class
 ];
